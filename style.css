@@ -2,9 +2,9 @@
 :root {
     /* Color */
     --color-white: #EBF7ED;
-    --color-green: #435259;
-    --color-green-light: #6A7F82;
-    --color-green-dark: #1A3338;
+    --color-grey: #8898AC;
+    --color-grey-light: #C6CFDF;
+    --color-grey-dark: #354868;
     --color-black: #041028;
     --color-brown: #996F3F;
     --color-brown-dark: #2C291A;
@@ -12,6 +12,7 @@
     --color-yellow-light: #F9EED2;
     --color-yellow-dark: #E7DEBF;
     --color-navy: #0D3858;
+    --color-navy-dark: #2F6383;
     --color-pink: #AF9594;
 
     /* Font Size */
@@ -35,6 +36,7 @@
 
     /* Font Family */
     font-family: 'PT Sans', sans-serif;
+    background-color: var(--color-white);
 }
 
 /* CSS Reset */
@@ -56,4 +58,33 @@ ul, li {
     list-style: none;
     margin: 0;
     padding: 0;
+}
+
+/* Navbar */
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--size-wide);
+    background-color: var(--color-navy);
+    color: var(--color-white);
+    border-bottom: 1px solid var(--color-grey);
+}
+.navbar__logo {
+    font-size: var(--font-large);
+    font-weight: var(--weight-bold);
+    letter-spacing: -0.08em;
+    text-transform: uppercase;
+}
+.navbar__logoImg {
+    height: 1.3em;
+    vertical-align: bottom;
+}
+.navbar__menuBtn {
+    vertical-align: top;
+    background-color: var(--color-navy-dark);
+    border: 1px solid var(--color-grey-dark);
+    border-radius: 3px;
+    padding: var(--size-slim);
+    color: var(--color-white);
 }
