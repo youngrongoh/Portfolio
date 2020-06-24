@@ -1,0 +1,40 @@
+/* Global Setting */
+:root {
+    /* Color */
+    --color-white: #EBF7ED;
+    --color-green: #435259;
+    --color-green-light: #6A7F82;
+    --color-green-dark: #1A3338;
+    --color-black: #041028;
+    --color-brown: #996F3F;
+    --color-brown-dark: #2C291A;
+    --color-yellow: #F6DD9A;
+    --color-yellow-light: #F9EED2;
+    --color-yellow-dark: #E7DEBF;
+    --color-navy: #0D3858;
+    --color-pink: #AF9594;
+
+    /* Font Size */
+    --font-large: 20px;
+    --font-medium: 16px;
+    --font-small: 14px;
+    --font-micro: 12px;
+
+    /* Font Weight */
+    --weight-bold: 700;
+    --weight-regular: 400;
+
+    /* Size */
+    --size-wide-super: 24px;
+    --size-wide: 18px;
+    --size-regular: 12px;
+    --size-slim: 8px;
+
+    /* Duration */
+    --duration: 300ms;
+
+    /* Font Family */
+    font-family: 'PT Sans', sans-serif;
+}
+
+
