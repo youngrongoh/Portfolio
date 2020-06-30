@@ -43,16 +43,19 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
+
 button {
     outline: none;
     background: none;
     border: none;
     cursor: pointer;
 }
+
 a {
     text-decoration: none;
     color: inherit;
 }
+
 ul, li {
     list-style: none;
     margin: 0;
@@ -62,6 +65,22 @@ ul, li {
 .container {
     padding: var(--size-wide-super);
     text-align: center;
+}
+
+h1,h2,h3{
+    margin: 0;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+h3 {
+    font-size: 24px;
 }
 
 /* Navbar */
@@ -74,16 +93,19 @@ ul, li {
     color: var(--color-white);
     border-bottom: 1px solid var(--color-grey);
 }
+
 .navbar__logo {
     font-size: var(--font-large);
     font-weight: var(--weight-bold);
     letter-spacing: -0.08em;
     text-transform: uppercase;
 }
+
 .navbar__logoImg {
     height: 1.3em;
     vertical-align: bottom;
 }
+
 .navbar__menuBtn {
     vertical-align: top;
     border: 1px solid var(--color-grey);
@@ -92,6 +114,7 @@ ul, li {
     color: var(--color-white);
     font-weight: var(--weight-bold);
 }
+
 .navbar__menuBtn:hover {
     background-color: var(--color-orange);
     color: var(--color-black);
@@ -107,6 +130,7 @@ ul, li {
     color: var(--color-white);
     z-index: 0;
 }
+
 #home:before {
     content: '';
     position: absolute;
@@ -120,6 +144,7 @@ ul, li {
     border-radius: 8px;
     opacity: 0.5;
 }
+
 #home:after {
     content: '';
     position: absolute;
@@ -133,6 +158,7 @@ ul, li {
     border-radius: 8px;
     opacity: 0.3;
 }
+
 .home__profile {
     overflow: hidden;
     width: 180px;
@@ -141,23 +167,86 @@ ul, li {
     border: 2px solid var(--color-grey-light);
     border-radius: 50%;
 }
+
 .home__profile img {
     width: 190px;
     height: 190px;
     position: relative;
     bottom: 10px;
 }
+
 .home__text {
     margin: var(--size-regular) var(--size-wide-super);
-    padding: var(--size-slim);
 }
+
 .home__contactBtn {
     border: 1px solid var(--color-grey-light);
     padding: var(--size-slim) var(--size-wide);
     color: var(--color-white);
     font-weight: var(--weight-bold);
 }
+
 .home__contactBtn:hover {
     background-color: var(--color-orange);
     color: var(--color-black);
+}
+
+/* Career */
+.career__fields {
+    display: flex;
+    justify-content: space-between;
+    margin: var(--size-wide);
+}
+.career__field {
+    width: 30%;
+}
+
+.career__fieldIcon {
+    border: 1px solid var(--color-navy-light);
+    border-radius: 50%;
+    width: 130px;
+    height: 130px;
+    margin: 0 auto;
+    line-height: 130px;
+    text-align: center;
+    font-size: 60px;
+    color: var(--color-navy);
+    margin-bottom: var(--size-regular);
+}
+
+.career__fieldDesc {
+    margin: 0;
+}
+
+.career__list {
+    margin-top: var(--size-wide-super);
+    padding-top: 36px;
+    border-top: 1px solid var(--color-grey-light);
+}
+
+.career__item {
+    display: grid;
+    grid-template-columns: [img]100px [desc]1fr;
+    grid-template-rows: 30px;
+    column-gap: var(--size-regular);
+    align-content: center;
+    margin-bottom: var(--size-wide);
+}
+
+.career__logoImg {
+    width: 100px;
+    height: 30px;
+    overflow: hidden;
+    margin-right: var(--size-regular);
+    align-self: center;
+    text-align: center;
+}
+
+.career__logoImg img {
+    height: 30px;
+}
+
+.career__itemDesc {
+    text-align: left;
+    align-self: center;
 }
